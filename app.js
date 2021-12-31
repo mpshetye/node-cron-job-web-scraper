@@ -43,3 +43,5 @@ const worldPopulation = async () => {
     }
 }
 
+const job = cron.schedule("*/30 * * * * *", worldPopulation);
+
